@@ -1,0 +1,3 @@
+# transient local state, not configuration
+errors.log
+*.bak
