@@ -5,6 +5,10 @@ general:
     - 'shell-exec wt'
     - 'shell-exec msedge'
     - 'shell-exec explorer.exe shell:AppsFolder\MSTeams_8wekyb3d8bbwe!MSTeams'
+    # Claude is deliberately not launched here: it cannot be started
+    # via shell-exec. Enable it under Task Manager > Startup apps
+    # instead. The window rule further below still pins it to
+    # workspace 4 once it is running.
 
     # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
