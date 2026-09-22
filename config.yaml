@@ -158,6 +158,22 @@ window_rules:
         window_class: { not_regex: 'OpusApp' }
       - window_process: { equals: 'POWERPNT' }
         window_class: { not_regex: 'PPTFrameClass' }
+ 
+  - commands: ['move --workspace 1']
+    match:
+      - window_process: { equals: 'WindowsTerminal' }
+
+  - commands: ['move --workspace 2']
+    match:
+      - window_process: { equals: 'msedge' }
+
+  - commands: ['move --workspace 3']
+    match:
+      - window_process: { equals: 'ms-teams' }
+
+  - commands: ['move --workspace 4']
+    match:
+      - window_process: { equals: 'claude' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
